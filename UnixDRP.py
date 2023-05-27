@@ -12,15 +12,15 @@ theShell = os.environ['SHELL']
 def getData():
 
     # identifying terminal
-    if "gnome-terminal-server" in (i.name() for i in psutil.process_iter()):
-        state = "On GNOME-terminal"
-        largeImage = "terminal"
-        largeText = "GNOME-terminal"
+    if "terminator" in (i.name() for i in psutil.process_iter()):
+        state = "On Terminator Terminal Multiplexer"
+        largeImage = "terminator"
+        largeText = "Terminator Terminal Multiplexer"
 
-    elif "konsole" in (i.name() for i in psutil.process_iter()):
-        state = "On KDE-Konsole"
-        largeImage = "konsole"
-        largeText = "KDE-Konsole"
+    elif "hyper" in (i.name() for i in psutil.process_iter()):
+        state = "On Hyper terminal"
+        largeImage = "hyper"
+        largeText = "Hyper Terminal"
     else:
         (state, largeImage, largeText) = ("On Linux Terminal", None, "Linux Terminal") # default values
 
