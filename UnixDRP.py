@@ -13,14 +13,14 @@ def getData():
 
     # identifying terminal
     if "terminator" in (i.name() for i in psutil.process_iter()):
-        state = "On Terminator Terminal Multiplexer"
+        state = ""I need your clothes, your boot, and your motorcycle.""
         largeImage = "terminator"
         largeText = "Terminator Terminal Multiplexer"
 
-    elif "hyper" in (i.name() for i in psutil.process_iter()):
-        state = "On Hyper terminal"
-        largeImage = "hyper"
-        largeText = "Hyper Terminal"
+    elif "cool-retro-term" in (i.name() for i in psutil.process_iter()):
+        state = "Doing silly little things in the terminal!"
+        largeImage = "cool-retro-term"
+        largeText = "CRT Terminal"
     else:
         (state, largeImage, largeText) = ("On Linux Terminal", None, "Linux Terminal") # default values
 
