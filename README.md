@@ -1,6 +1,6 @@
-# Terminator-Hyper-RPC
+# Terminator-CoolRetroTerm-RPC
 A simple script that detects when the command-line is open, grabs basic terminal info and displays it as Discord Rich Presence
-It has been modified to work with with Terminator and Hyper terminal. Both which I use daily. This is a personal fork but you are more than willing to use it. I still need to test it though.
+It has been modified to work with with Terminator and CoolRetroTerm terminal. Both which I use daily. This is a personal fork but you are more than willing to use it. I still need to test it though.
 
 ## Requirements
 - python3<br>
